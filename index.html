@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script  src="js/code.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    
+    
+    <title>CALCULADORA</title>
+</head>
+
+<body>
+
+    <div class="white_box">
+
+        <h1 id="Titulo">Calculadora JS</h1>
+
+        <div class = "tela">
+
+            <h1 id="_view" style="display: flex;width: 90%;justify-content: center;align-items: center;"></h1>
+            <h1 id="_view_operador"style="width: 10%;"></h1>
+
+
+        </div>
+
+        <div style="margin-top: 15px;display: flex;">
+            <input class="btn_1 button" type="button" value="1" onclick="btn(1)">
+            <input class="btn_2 button" type="button" value="2" onclick="btn(2)">
+            <input class="btn_3 button" type="button" value="3" onclick="btn(3)">
+            <input class="Soma button2" type="button" value="+" onclick="Operacao('Soma')">
+        </div>
+
+        <div style="display: flex;">
+            <input class="btn_4 button" type="button"  value="4" onclick="btn(4)"/>
+            <input class="btn_5 button" type="button"  value="5" onclick="btn(5)"/>
+            <input class="btn_6 button" type="button"  value="6" onclick="btn(6)"/>
+            <input class="Subtracao button2" type="button"  value="-" onclick="Operacao('Subtracao')" />
+        </div>
+
+        <div style="display: flex;">
+            <input class="btn_7 button" type="button"  value="7" onclick="btn(7)"/>
+            <input class="btn_8 button" type="button"  value="8" onclick="btn(8)"/>
+            <input class="btn_9 button" type="button"  value="9" onclick="btn(9)"/>
+            <input class="Multiplicacao button2" type="button"  value="*" onclick="Operacao('Multiplicacao')" />
+        </div>
+
+        <div style="display: flex;">
+            <input class="btn_reset button2" type="button"  value="C" onclick="Reset()"/>
+            <input class="btn_0 button" type="button"  value="0" onclick="btn(0)"/>
+            <input class="Igualdade button2" type="button"  value="=" onclick="Igualdade()"/>
+            <input class="Divisao button2" type="button"  value="/" onclick="Operacao('Divisao')" />
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
